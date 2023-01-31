@@ -18,16 +18,39 @@ public class Main {
             if (min% 2 == 0) {
                 power=power+300;
 
-             //   System.out.println(x);
-              //  System.out.println(tili);
             } else if (min%2!=0) {
                 power =power- 600;
 
             }if (power==0) {
+
                 break;
             }
 
         }
-        System.out.println(min*60);
+        System.out.println(min*60+power/10);
     }
 }
+//public class Main03 {
+//    public static void main(String[] args) {
+//        int tl = 10000;
+//        boolean b = true;
+//        int time = 0;
+//        while (true) {
+//            //体力为0
+//        if (tl<600&&b) {
+//            //将剩余的体力转化为时间加起来算总时间
+//            System.out.println(time*60+tl/10);
+//            break;
+//        }
+//        if (b) {
+//            tl-=600;
+//            b=false;
+//            time++;
+//        }else{
+//            tl+=300;
+//            b=true;
+//            time++;
+//        }
+//        }
+//    }
+//}
