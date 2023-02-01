@@ -1,5 +1,4 @@
 package 蓝桥杯整除数列;
-<<<<<<< HEAD
 //【问题描述】
 //本题总分：15 分
 //有一个序列，序列的第一个数是 n，后面的每个数是前一个数整除 2，请输
@@ -19,18 +18,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
-        int num1= num.nextInt();
-        while (true){
-            if(num1>0){
+        int num1 = num.nextInt();
+        while (true) {
+            if (num1 > 0) {
                 System.out.println(num1);
-                num1/=2;
-            }else {
+                num1 /= 2;
+            } else {
                 break;
             }
         }
     }
-=======
-
-public class Main {
->>>>>>> origin/master
 }
+
+
