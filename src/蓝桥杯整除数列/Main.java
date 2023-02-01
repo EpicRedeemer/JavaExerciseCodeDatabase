@@ -1,4 +1,5 @@
 package 蓝桥杯整除数列;
+<<<<<<< HEAD
 //【问题描述】
 //本题总分：15 分
 //有一个序列，序列的第一个数是 n，后面的每个数是前一个数整除 2，请输
@@ -28,4 +29,8 @@ public class Main {
             }
         }
     }
+=======
+
+public class Main {
+>>>>>>> origin/master
 }
