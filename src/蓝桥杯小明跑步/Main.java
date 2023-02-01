@@ -13,44 +13,20 @@ public class Main {
         int power=10000;
         int min=0;
         while (true) {
-            min++;
+           // min++;修正：如果在这添加自增程序会在第三个if语句重复增加导致错误结果3700
 
             if (min% 2 == 0) {
                 power=power+300;
-
+                min++;
             } else if (min%2!=0) {
                 power =power- 600;
-
-            }if (power==0) {
-
+                min++;
+            } if (power<=600) {//修正：因为体力不会刚刚好等于0，所以不使用=0去判断。
+                System.out.println(min*60+power/10);//修正：也就是剩余体力不到600的时候，正好下一分钟要进行跑步。
+                // 这个时候这一分钟步是跑不完的，所以又用tl/10，这里的10是没秒消耗的体力（600/60）
                 break;
             }
 
         }
-        System.out.println(min*60+power/10);
     }
 }
-//public class Main03 {
-//    public static void main(String[] args) {
-//        int tl = 10000;
-//        boolean b = true;
-//        int time = 0;
-//        while (true) {
-//            //体力为0
-//        if (tl<600&&b) {
-//            //将剩余的体力转化为时间加起来算总时间
-//            System.out.println(time*60+tl/10);
-//            break;
-//        }
-//        if (b) {
-//            tl-=600;
-//            b=false;
-//            time++;
-//        }else{
-//            tl+=300;
-//            b=true;
-//            time++;
-//        }
-//        }
-//    }
-//}
