@@ -32,7 +32,7 @@ public class Main {
         int b = scan.nextInt();
         Scanner scan3 = new Scanner(System.in);
         int c = scan.nextInt();
-        if (a +b % 3 == 0 || a + c % 3 == 0 || b + c %3==0) {
+        if (a + b % 3 == 0 || a + c % 3 == 0 || b + c %3==0) {
             System.out.println("yes");
         } else {
             System.out.println("no");
