@@ -16,7 +16,7 @@ public class main {
                 System.out.println(dp[5][2021]);
             }
         }
-//原作答
+//原作答。
    // public static void main(String[] args) {
     //    int num =0;
       //  for (int x=1;x<=2021;x++){
